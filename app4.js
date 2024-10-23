@@ -23,7 +23,7 @@ app.get("/home", (req, res)=>{
 
 app.post('/data', (req, res)=>{
     const id = Date.now()
-    const {name, email} = res.body
+    const {name, email} = res.body // Destructuring
 
     res.send({id, name, email})
 })
